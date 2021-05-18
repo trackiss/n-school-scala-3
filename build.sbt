@@ -1,4 +1,9 @@
+lazy val scalaTestV = "3.2.9"
+
 lazy val globalSettings = Seq(
+  libraryDependencies ++= Seq(
+    "org.scalatest" %% "scalatest" % scalaTestV % Test
+  ),
   scalacOptions ++= Seq(
     "-deprecation",
     "-explain",
